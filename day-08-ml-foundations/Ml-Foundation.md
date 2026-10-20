@@ -401,18 +401,18 @@ The appropriate metric depends on the problem and the cost of different types of
 
 A typical ML project follows these steps:
 
-1. Define the problem.
-2. Collect or load the dataset.
-3. Explore and understand the data.
-4. Clean the data and handle missing values.
-5. Perform feature engineering and preprocessing.
-6. Split data into training, validation, and test sets.
-7. Select an appropriate algorithm.
-8. Train the model.
-9. Tune hyperparameters using training and validation data.
-10. Evaluate the final model on the test set.
-11. Save and deploy the model.
-12. Monitor performance after deployment.
+1. Define the problem — Decide what you want to predict or solve.
+2. Collect or load the dataset — Get data from CSV files, databases, APIs, or other sources.
+3. Explore and understand the data (EDA) — Check columns, data types, distributions, missing values, and class balance.
+4. Clean the data — Correct invalid values, remove duplicates when appropriate, and remove irrelevant columns using domain knowledge.
+5. Separate features and target — Define X (inputs) and y (target).
+6. Split the dataset — Create training, validation, and test sets.
+7. Preprocess the data — Fit imputers, encoders, and scalers on training data; transform validation and test data using those fitted objects.
+8. Perform feature engineering and feature selection — Create useful features and select relevant ones using training data only.
+9. Select an appropriate algorithm — For example, Logistic Regression, Random Forest, or XGBoost.
+10. Train the model and tune hyperparameters — Use training data for fitting and validation data for tuning.
+11. Evaluate the final model — Evaluate it on the test set after the development decisions are complete.
+12. Save, deploy, and monitor the model — Integrate it into an application and monitor performance over time.
 
 ## 9. Recommended Tools and Libraries
 
