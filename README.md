@@ -16,7 +16,7 @@ A 7-day plan covering ML foundations, statistics, linear algebra, and core Sciki
 
 ## Progress
 
-- [x] Day 1 — What is AI, ML and Deep Learning; supervised, unsupervised, reinforcement learning; dataset terms → [day-01-ai-ml-dl/Ai-Ml-Dl.md](day-01-ai-ml-dl/Ai-Ml-Dl.md)
+- [x] Day 1 — What is AI, ML and Deep Learning; supervised, unsupervised, reinforcement learning; dataset terms → [day-08-ml-foundations/Ml-Foundation.md](day-08-ml-foundations/Ml-Foundation.md)
 - [ ] Day 2 — Mean, median, mode, variance, standard deviation
 - [ ] Day 3 — Linear algebra basics: vectors, matrices, dot products
 - [ ] Day 4 — Probability, correlation, train/validation/test split; dataset exploration task
