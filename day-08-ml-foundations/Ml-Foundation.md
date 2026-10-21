@@ -1,4 +1,4 @@
-# ML Foundations — AI, Machine Learning, and Deep Learning
+# Day 8 - ML Foundations — AI, Machine Learning, and Deep Learning
 
 ## 1. Introduction
 
