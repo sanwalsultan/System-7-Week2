@@ -1,137 +1,188 @@
-# Day 9: Statistics for Data Science
 
-## Topics Covered
+## Day 9: Descriptive Statistics
 
-- Mean
-- Median
-- Mode
-- Variance
-- Standard Deviation
+**Title:** Mean, Median, Mode, Variance, and Standard Deviation  
+**Mentor:** Saad Hassan Saadi  
+**Level:** Beginner
 
-## 1. Mean
+---
 
-Mean is the average of all values in a dataset.
+## Objective
 
-**Formula:**
+The objective of this assignment is to understand descriptive statistics and learn how to summarize and analyze numerical data. I will learn about mean, median, mode, variance, and standard deviation and understand how these concepts help us interpret a dataset.
 
-Mean = Sum of all values / Number of values
+## 1. What is Descriptive Statistics?
 
-**Example:**
+Descriptive statistics is the process of organizing, summarizing, and understanding data using numbers and other simple methods.
 
-Dataset: `[10, 20, 20, 30, 40]`
+It helps us understand the main characteristics of a dataset without examining every value individually.
 
-Mean = 120 / 5 = **24**
+**Example:** If we have marks for 10 students, descriptive statistics can help us find the average marks and understand how much the marks differ from one another.
 
-```python
-import numpy as np
+## 2. Mean
 
-data = [10, 20, 20, 30, 40]
-
-print("Mean:", np.mean(data))
-```
-
-## 2. Median
-
-Median is the middle value when the dataset is arranged in ascending order.
+The mean is the average of a set of numbers. It is calculated by adding all the values and dividing the total by the number of values.
 
 **Example:**
 
-Dataset: `[10, 20, 20, 30, 40]`
+Marks: 10, 20, 30, 40, 50
 
-Median = **20**
+Mean = (10 + 20 + 30 + 40 + 50) / 5
 
-For an even number of values, the median is the average of the two middle values.
+**Mean = 30**
 
-```python
-print("Median:", np.median(data))
-```
+**In simple words:** Mean tells us the average value of the data.
 
-## 3. Mode
+## 3. Median
 
-Mode is the value that appears most frequently in a dataset.
+The median is the middle value when the data is arranged in ascending or descending order.
 
 **Example:**
 
-Dataset: `[10, 20, 20, 30, 40]`
+Data: 10, 20, 30, 40, 50
 
-Mode = **20**
+**Median = 30**
 
-```python
-from statistics import mode
-
-print("Mode:", mode(data))
-```
-
-## 4. Variance
-
-Variance measures how far the values are spread out from the mean. It is calculated by taking the average of the squared differences between each value and the mean.
+When there is an even number of values, the median is the average of the two middle values.
 
 **Example:**
 
-Dataset: `[10, 20, 20, 30, 40]`
+Data: 10, 20, 30, 40
 
-Population Variance = **104**
+Median = (20 + 30) / 2
 
-```python
-print("Population Variance:", np.var(data))
-```
+**Median = 25**
 
-Note: `np.var()` calculates population variance by default. Use `np.var(data, ddof=1)` for sample variance.
+**In simple words:** Median tells us the middle value of an ordered dataset.
 
-## 5. Standard Deviation
+## 4. Mode
 
-Standard deviation measures the spread of data around the mean. It is the square root of the variance and uses the same units as the original data.
+The mode is the value that appears most frequently in a dataset.
 
 **Example:**
 
-Dataset: `[10, 20, 20, 30, 40]`
+Data: 10, 20, 20, 30, 40
 
-Standard Deviation = √104 ≈ **10.20**
+**Mode = 20**
 
-```python
-print("Standard Deviation:", round(np.std(data), 2))
-```
+The value 20 appears more often than the other values.
 
-## Complete Python Program
+**In simple words:** Mode tells us which value occurs most frequently.
 
-```python
-import numpy as np
-from statistics import mode
+## 5. Variance
 
-data = [10, 20, 20, 30, 40]
+Variance measures how far the values in a dataset are spread out from their mean.
 
-print("Dataset:", data)
-print("Mean:", np.mean(data))
-print("Median:", np.median(data))
-print("Mode:", mode(data))
-print("Variance:", np.var(data))
-print("Standard Deviation:", round(np.std(data), 2))
-```
+A low variance means that the values are generally closer to the mean. A high variance means that the values are more spread out.
 
-### Expected Output
+**Example:**
 
-```text
-Dataset: [10, 20, 20, 30, 40]
-Mean: 24.0
-Median: 20.0
-Mode: 20
-Variance: 104.0
-Standard Deviation: 10.2
-```
+Dataset A: 10, 10, 10
 
-## Summary
+Dataset B: 5, 10, 15
 
-| Concept | Purpose | Result |
-|---|---|---:|
-| Mean | Calculates the average | 24 |
-| Median | Finds the middle value | 20 |
-| Mode | Finds the most frequent value | 20 |
-| Variance | Measures squared spread | 104 |
-| Standard Deviation | Measures spread in original units | 10.20 |
+Both datasets have a mean of 10, but Dataset B has a higher variance because its values are more spread out.
 
+**In simple words:** Variance measures the spread of data around the mean.
 
-## Tools and Libraries
+## 6. Standard Deviation
 
-- Python
-- NumPy
-- `statistics` module
+Standard deviation measures how much the values usually differ from the mean.
+
+A low standard deviation means that values are generally close to the mean. A high standard deviation means that values are more spread out.
+
+**Example:**
+
+If the marks of students are close to the average, the standard deviation will be low. If the marks vary greatly, the standard deviation will be higher.
+
+**In simple words:** Standard deviation helps us understand how spread out the data is.
+
+## 7. Difference Between These Statistical Measures
+
+| Measure | Meaning |
+|---|---|
+| Mean | Average value |
+| Median | Middle value |
+| Mode | Most frequent value |
+| Variance | Measure of data spread around the mean |
+| Standard Deviation | Measure of spread expressed in the original units |
+
+## 8. Practical Activity
+
+For this assignment, I will create a dataset containing at least 10 numerical values, such as student marks, study hours, or house prices.
+
+I will complete the following tasks:
+
+1. Prepare a list of at least 10 numerical values.
+2. Calculate the mean.
+3. Calculate the median.
+4. Identify the mode, if one exists.
+5. Calculate the variance.
+6. Calculate the standard deviation.
+7. Verify the results using Python's `statistics` module or NumPy.
+8. Write a short explanation of what the results tell me about the dataset.
+
+**Note:** The practical activity can be completed using Python, a notebook, or another suitable method.
+
+## 9. Example of Data Analysis
+
+Consider the following marks:
+
+**10, 20, 20, 30, 40**
+
+- **Mean:** 24
+- **Median:** 20
+- **Mode:** 20
+
+The mean is 24, while the median and mode are both 20. This shows that the average is slightly higher than the middle and most frequent values.
+
+Variance and standard deviation can also be calculated to understand how the marks are spread out.
+
+**Note:** Variance and standard deviation can differ depending on whether the data is treated as a population or a sample. The method used should be stated when reporting results.
+
+## 10. Questions and Answers
+
+### 1. What is descriptive statistics?
+Descriptive statistics summarizes and describes the main characteristics of data.
+
+### 2. What is mean?
+Mean is the average calculated by dividing the sum of values by the number of values.
+
+### 3. What is median?
+Median is the middle value when data is arranged in order.
+
+### 4. What is mode?
+Mode is the value that occurs most frequently in a dataset.
+
+### 5. What is variance?
+Variance measures how spread out values are around the mean.
+
+### 6. What is standard deviation?
+Standard deviation measures the spread of values around the mean in the original units.
+
+### 7. What is the difference between mean and median?
+Mean is the average of all values, while median is the middle value of ordered data.
+
+### 8. Can a dataset have more than one mode?
+Yes. A dataset can have two or more modes if multiple values share the highest frequency.
+
+### 9. What does a high standard deviation mean?
+It generally means that values are more spread out from the mean.
+
+### 10. Why are descriptive statistics useful in machine learning?
+They help us understand the data, identify patterns, and detect unusual values before training a model.
+
+## 11. Conclusion
+
+In Day 9, I learned how to summarize numerical data using mean, median, and mode. I also learned how variance and standard deviation help measure the spread of data.
+
+These concepts are useful for understanding datasets and preparing data for machine-learning tasks.
+
+---
+
+## GitHub Information
+
+- **Repository:** System 7 Repository
+- **Folder:** `day-09-descriptive-statistics`
+- **File:** `README.md`
+- **Suggested commit message:** `day-09-descriptive-statistics`
